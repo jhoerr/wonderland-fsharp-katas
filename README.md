@@ -12,10 +12,25 @@ Work in progress: one day, this will be an F# port of [@gigasquid](https://twitt
 
 First, clone or fork this repo. All the katas are located in the folder `/wonderland-fsharp-katas/`. Each kata is an independent, self-contained F# script, and a companion instructions file (for example, alphabet-cipher.fsx and alphabet-cipher.md). Read the instructions, open the script file in your favorite editor or IDE, select all the code (<kbd>control</kbd>+<kbd>A</kbd>) and execute it (<kbd>Alt</kbd>+<kbd>Enter</kbd>) - and fix the code until the tests pass.
 
-Before running any of the katas, you will need to download some dependencies, using [Paket](https://fsprojects.github.io/Paket/). Once your have cloned or forked the project, `cd .paket`, and run first `paket.bootstrapper.exe`, then `paket.exe install` to install the dependencies.
+## Dependencies
 
 If you don't have F# installed yet, follow the instructions from the **use** section of [**fsharp.org**](http://www.fsharp.org).
 
+Before running any of the katas, you will need to download some dependencies, using [Paket](https://fsprojects.github.io/Paket/). A boostrapper will download the latest version of Paket, which in turn will download the package dependencies.
+
+### On Windows
+
+``` 
+> .paket\paket.bootstrapper.exe
+> .paket\paket.exe install
+```
+
+### On macOS/Linux 
+
+```
+> mono .paket/paket.bootstrapper.exe
+> mono .paket/paket.exe install
+```
 
 ## License
 
